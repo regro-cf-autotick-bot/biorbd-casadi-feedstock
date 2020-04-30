@@ -11,7 +11,7 @@ source:
   sha256: 7682fa0c34d6c9a4415c8293d12089845390516845334dbb5c4fcaedb60872ef
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [py<36 or py>37]
   rpaths:
@@ -29,11 +29,13 @@ requirements:
   host:
     - casadi
     - rbdl-casadi
-    - numpy =1.14
+    - numpy
+    - tinyxml
   run:
     - {{ pin_compatible('casadi') }}
     - {{ pin_compatible('rbdl-casadi') }}
     - {{ pin_compatible('numpy') }}
+    - tinyxml
 
 test:
   commands:
