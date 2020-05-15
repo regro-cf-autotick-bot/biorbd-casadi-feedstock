@@ -29,7 +29,7 @@ requirements:
   host:
     - casadi
     - rbdl-casadi
-    - numpy =1.14
+    - numpy 
     - tinyxml
   run:
     - {{ pin_compatible('casadi') }}
