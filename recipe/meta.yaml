@@ -1,6 +1,6 @@
 {% set libname = "biorbd" %}
 {% set name = "biorbd-casadi" %}
-{% set version = "1.2.5" %}
+{% set version = "1.2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/pyomeca/{{ libname }}/archive/Release_{{ version }}.tar.gz
-  sha256: 1fc876d480110bbc4b64f41bd23909006b0ca9abb6620cfc2fbf5252fe565597
+  sha256: bb08e1c43738d28c2756f05cff32a818ccf1c724b21d901de72ba27b0198d1f1
 
 build:
   number: 0
